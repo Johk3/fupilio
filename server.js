@@ -51,7 +51,7 @@ app.get("/message*/", (req, res) =>{
 		let HelperOptions = {
 			from: '"Fupilio" < legendaryemailbot@gmail.com',
 			to: 'user3610@protonmail.com',
-			subject: `Customer ${name} contacted you"`,
+			subject: `Customer ${name} contacted you`,
 			text: `User ${name} contacted you with the email ${email} His message is ${message}`
 		};
 		transporter.sendMail(HelperOptions, (error, info) => {
